@@ -1,0 +1,27 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 48px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#player {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200%; /* make it extra wide */
+  height: 200%; /* make it extra tall */
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: none;
+  pointer-events: none; /* so clicks pass through if needed */
+}
